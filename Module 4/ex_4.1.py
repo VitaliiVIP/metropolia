@@ -1,1 +1,5 @@
-dd
+i=1
+while i<1001:
+        if i%3==0:
+            print(i)
+        i=i+1
