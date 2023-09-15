@@ -1,2 +1,10 @@
-for i in range(100, 1000):
-    print(i.random)
+import random
+a=random.randint(0, 9)
+b=random.randint(0, 9)
+c=random.randint(0, 9)
+print(a,b,c)
+a1=random.randint(1, 6)
+b1=random.randint(1, 6)
+c1=random.randint(1, 6)
+d1=random.randint(1, 6)
+print(a1, b1, c1, d1)
