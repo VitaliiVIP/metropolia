@@ -1,6 +1,12 @@
 a=input()
-while a!=" ":
+list=[]
+while a!="":
+    list.append(a)
     print(a)
     a=input()
-    if a==" ":
-        print()
+max=max(list)
+min=min(list)
+if a=="":
+    print(list)
+    print(max)
+    print(min)
