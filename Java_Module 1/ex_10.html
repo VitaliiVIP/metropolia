@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<ul id="List"></ul>
+<script>
+        const List = document.getElementById('List');
+        const numberStr = prompt('Type number');
+        const number = parseInt(numberStr);
+        let summ1=0;
+        const summStr = prompt('Type Summ');
+        const summ = parseInt(summStr);
+        let equality=0
+        let summ2=0
+        let difference=0
+        for(let i=1; i<=10000; i++){
+            summ2=summ1;
+            for(let i=1; i<=number; i++) {
+                result = Math.floor(Math.random() * 6) + 1;
+                summ1+=result;
+                }
+                difference=summ1-summ2;
+                if (difference===summ){
+                    equality+=1;}
+            const listItem = document.createElement('li');
+            listItem.textContent = summ1;
+        }
+        document.querySelector('p').innerHTML='Probability to get sum '+summ+' with '+ number+' dice is '+ Number.parseFloat(equality/10000*100).toFixed(2)+'%';
+</script>
+</body>
+</html>

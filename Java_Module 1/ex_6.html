@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<script>
+    const answer = confirm('Should I calculate the square root?');
+
+    console.log(answer);
+    if (answer===false) {
+        document.querySelector('p').innerHTML = 'The square root is not calculated.';
+    }
+    else{
+        const numberStr = prompt('Type number');
+        const number = parseInt(numberStr);
+        document.querySelector('p').innerHTML = number**2;
+    }
+</script>
+</body>
+</html>

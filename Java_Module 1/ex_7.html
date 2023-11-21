@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<script>
+        const numberStr = prompt('Type number');
+        const number = parseInt(numberStr);
+        let time = 0;
+        let summ = 0;
+        while(time!==number) {
+             result = Math.floor(Math.random()*6)+1;
+             summ+=result;
+             time+=1;
+        }
+        document.querySelector('p').innerHTML= summ;
+</script>
+</body>
+</html>

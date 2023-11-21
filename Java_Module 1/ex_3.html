@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testing JavaScript</title>
+</head>
+<body>
+<h1></h1>
+<p id="target"></p>
+<script>
+    'use strict';
+    const numberStr = prompt('Type number');
+    const number = parseInt(numberStr);
+    const number2Str = prompt('Type the 2nd number');
+    const number2 = parseInt(number2Str);
+    const number3Str = prompt('Type the 3rd number');
+    const number3 = parseInt(number3Str);
+    document.querySelector('#target').innerHTML = number+number2+number3 + ' - summ, ' + number*number2*number3 + ' - product, '
+    +((number+number2+number3)/3)+' - average';
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<script>
+    const numberStr = prompt('Type number');
+    const number = parseInt(numberStr);
+    const sqrt=Math.sqrt(number)
+    let result=1
+        for(let i = 2; i <= sqrt; i++){
+            if (number > 1 && number % i === 0) {
+                result=0;
+                break;
+            }
+        }
+    if(result===1){
+        document.querySelector('p').innerText=number + " IS PRIME number";
+    }
+    else{
+        document.querySelector('p').innerText=number + " IS NOT PRIME number";
+    }
+</script>
+</body>
+</html>

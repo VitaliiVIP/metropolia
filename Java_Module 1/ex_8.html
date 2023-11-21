@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        const numberStr = prompt('Type number');
+        let number = parseInt(numberStr);
+        const number2Str = prompt('Type number 2');
+        const number2 = parseInt(number2Str);
+
+        while (!(number%4===0 && (number % 100!==0 || number%400===0))) {
+            number+=1;
+        }
+        let output = '<ul>';
+        for (let i=number; i<=number2; i+=4) {
+            output += i + `<li>${i}</li>`;
+        }
+        output += '</ul>';
+        document.querySelector('p').innerHTML = output;
+    </script>
+</body>
+</html>

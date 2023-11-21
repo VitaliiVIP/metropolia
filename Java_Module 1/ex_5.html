@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p></p>
+<script>
+    'use strict';
+    const numberStr = prompt('Type number');
+    const year = parseInt(numberStr);
+    if (year%4===0 && year%100!==0 || year%400===0) {
+        document.querySelector('p').innerHTML = year + ' IS leap year';
+    }
+    else{
+        document.querySelector('p').innerHTML = year + ' IS NOT leap year';
+    }
+</script>
+</body>
+</html>
